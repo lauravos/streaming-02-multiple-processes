@@ -5,3 +5,36 @@ This will clear the console output.
 Run the file once while the tasks are short. 
 
 Copy and paste the terminal results (when task_duration is 0) here.
+
+======================================================================
+STARTING UP.............................
+  Date and Time:    2024-05-09 at 08:13 PM
+  Operating System: nt Windows 10
+  Python Version:   3.11.4
+  Path to Interpreter:  C:\Users\laura\AppData\Local\Programs\Python\Python311\python.exe
+======================================================================
+
+2024-05-09 20:13:10,209 - INFO - Called recreate_database().
+2024-05-09 20:13:10,210 - INFO - Called drop_table().
+2024-05-09 20:13:10,215 - INFO - Table 'pets' dropped successfully.
+2024-05-09 20:13:10,215 - INFO - Called create_table().
+2024-05-09 20:13:10,220 - INFO - Table 'pets' created successfully.
+2024-05-09 20:13:10,342 - INFO - Called process_one().
+2024-05-09 20:13:10,342 - INFO -   Called insert_pet() with process=P1, name=Ace, breed=Dog.
+2024-05-09 20:13:10,343 - INFO - Called process_two().
+2024-05-09 20:13:10,343 - INFO -   Called insert_pet() with process=P2, name=Cooper, breed=Rabbit.      
+2024-05-09 20:13:10,347 - INFO -   Called insert_pet() with process=P1, name=Buddy, breed=Dog.
+2024-05-09 20:13:10,350 - INFO - Called process_three().
+2024-05-09 20:13:10,350 - INFO -   Called insert_pet() with process=P3, name=Emma, breed=Rabbit.        
+2024-05-09 20:13:10,364 - INFO -   Called insert_pet() with process=P3, name=Felix, breed=Cat.
+2024-05-09 20:13:10,381 - INFO -   Called insert_pet() with process=P2, name=Dingo, breed=Dog.
+2024-05-09 20:13:10,397 - INFO - 
+SUCCESS: All processes successfully completed!
+
+Now - increase the task duration (representing
+      the time the task has the database
+      tied up during an insert statement).
+How well do multiple, concurrent processes share a database
+    when each task takes more time?
+How can multiple processes share a resource
+    without interfering with each other?

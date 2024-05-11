@@ -1,4 +1,6 @@
 # streaming-02-multiple-processes
+## Laura Gagnon-Vos
+## 05/10/2024
 
 > Multiple processes accessing a shared resource concurrently
 
